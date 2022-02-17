@@ -1,0 +1,36 @@
+.header {
+	.topbar-header{
+		background-color: @color-black;
+		display: flex;
+		justify-content: center;
+		.topbar-header-container {
+			max-width: @layout__max-width;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+			list-style-type: none;
+			width: 100%;
+			margin-right: 15px;
+			margin-left: 15px;
+			@media @mobile {
+				display: flex;
+				justify-content: center;
+			}
+			.text {
+				color: @color-white;
+				padding: 5px;
+				font-size: 14px;
+				font-weight: bold;
+			&-or {
+				color: @color-white;
+				padding: 5px;
+				font-size: 14px;
+				}
+			}
+
+		}
+	}
+}
+
+
+

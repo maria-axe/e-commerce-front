@@ -1,0 +1,59 @@
+.main-container {
+    max-width: @layout__max-width;
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0px 0px;
+
+    .section-container {
+        display: flex;
+        width: 100%;
+        @media @mobile {
+            display: flex;
+            flex-direction: column;
+        }
+    }
+    .sidebar {
+        background-color: @color-quaternary;
+        height: 507px;
+        display: flex;
+        height: 100%;
+        margin-right:18px;
+        flex: 1;
+        @media @mobile {
+            display: none;
+        }
+    }
+    .sidebar-list {
+        padding: 22px 32px;
+    }
+
+    .breadcrumb {
+        padding: 10px 0px;
+        ul {
+            list-style: none;
+            display: flex;
+        }
+
+        &-list-1,
+        &-list-2,
+        &-list-3 {
+            margin-right: 5px;
+            font-size: 14px;
+        }
+
+        &-list-1 {
+            color: @color-secundary;
+        }
+
+        &-list-2 {
+            color:@color-tertiary ;
+        }
+        
+        &-list-3 {
+            color: @color-primary;
+        }
+ 
+    }  
+}

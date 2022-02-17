@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Webjump - Desafio Frontend</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+	<link href="/assets/css/main.css" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+	<header>
+		<div class="header">
+			<div class="topbar-header">
+				<ul class="topbar-header-container">
+					<li><a class="text" href="#"><i class=""></i>Acesse sua conta</a></li>
+					<li class="text-or">ou</li>
+					<li><a class="text" href="#"><i class=""></i>Cadastre-se</a></li>
+				</ul>
+			</div>
+			<div class="top-header">
+				<div class="top-header-container">
+					<button class="button-menu-mobile" id="js-button-menu"><i class="fa fa-bars" aria-hidden="true"></i></button>
+					<div class="top-header-logo">
+						<a href="/"><img src="assets/images/webjump.png"></a>
+					</div>
+					<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+					<div class="top-header-search">
+						<input class="input-search" type="search" name="q" value="" maxlength="128">
+						<button type="submit" name="Buscar" class="search-button">
+							<span class="search">Buscar</span>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<nav class="navigation">
+			<div class="navigation-container">
+				<ul class="nav-list" id="js-menu-mobile">
+					<li><a class="text" href="/">Página inicial</a></li>
+					<li><a class="text" href="/category.html?category=1">Camisetas</a></li>
+					<li><a class="text" href="/category.html?category=2"></i>Calças</a></li>
+					<li><a class="text" href="/category.html?category=3">Sapatos</a></li>
+					<li><a class="text" href="/contato">Contato</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main class="main">
+		<div class="main-container">
+			<div class="breadcrumb">
+				<ul>
+					<li class="breadcrumb-list-1" href="#">Página inicial</li>
+					<li class="breadcrumb-list-2" href="#">></li>
+					<li class="breadcrumb-list-3" id="breadcrumb-list-3" href="#"></li>
+				</ul>
+			</div>
+			<div class="section-container">
+				<section class="filter">
+					<span class="title-filter">Filtre por</span>
+					<div class="filter-category">
+						<span class="title-category">Categorias</span>
+						<ul class="filter-category-list">
+							<li class="product-filter" href="#">Roupas</li>
+							<li class="product-filter" href="#">Sapatos</li>
+							<li class="product-filter" href="#">Acessórios</li>
+						</ul>
+					</div>
+					<div class="filter-color">
+						<span class="title-color">Cores</span>
+						<ul class="color-list">
+							<li class="filter-color-red" href="#"></li>
+							<li class="filter-color-orange" href="#"></li>
+							<li class="filter-color-blue" href="#"></li>
+						</ul>
+					</div>
+					<div class="filter-type">
+						<span class="title-type">Tipo</span>
+						<ul class="filter-type-list">
+							<li class="" href="#">Corrida</li>
+							<li class="" href="#">Caminhada</li>
+							<li class="" href="#">Casual</li>
+							<li class="" href="#">Social</li>
+						</ul>
+					</div>
+				</section>
+				<section class="section">
+					<h1 class="title-category" id="title-category"></h1>
+					<div class="toolbar-container">
+						<div class="toolbar">
+							<i class="fa fa-th"></i>
+							<i class="fa fa-list" aria-hidden="true"></i>
+						</div>
+						<div class="toolbar-span">
+							<span>Ordenar por</span>
+							<select>
+								<option>Preço</option>
+							</select>
+						</div>
+					</div>
+					<ul class="product-list" id="product-list-wraper"></ul>
+				</section>
+			</div>
+			</div>
+		</div>
+	</main>
+	<footer class="footer">
+		<div class="footer-container"></div>
+	</footer>
+	<script src="/assets/js/libs/jquery-3.5.1.min.js"></script>
+	<script src="/assets/js/product-list.js"></script>
+	<script src="/assets/js/nav.js"></script>
+	<script src="/assets/js/breadcrumb.js"></script>
+</body>
+
+</html>

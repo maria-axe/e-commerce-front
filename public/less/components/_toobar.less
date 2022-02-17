@@ -1,0 +1,39 @@
+
+.toolbar-container {
+    display: flex;
+    justify-content: space-between;
+    .fa {
+        font-size: 20px;
+        &.fa-th {
+            color: @color-six;
+            margin-right: 3px;
+        }
+        &.fa-list {
+             color: @color-secundary;
+        }
+    }
+
+    .toolbar-span {
+        display: flex;
+    }
+
+    span {
+        text-transform: uppercase;
+        font-size: 11px;
+        color: @color-eight;
+        display: flex;
+        margin-right: 10px;
+        align-items: center;
+    }
+
+    select {
+        font-size: 14px;
+        color: @color-black;
+        width: 210px;
+        height: 27px;
+        border-radius: 5px;
+        background-color: @color-white;
+        border: 1px @color-quaternary solid;
+    }
+
+}

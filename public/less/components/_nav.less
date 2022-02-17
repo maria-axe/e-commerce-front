@@ -1,0 +1,44 @@
+.navigation{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    background-color: @color-primary;
+    margin-bottom: 20px;
+    @media @mobile {
+        background: transparent;
+    }
+    .navigation-container {
+        max-width: @layout__max-width;
+        width: 100%;
+        display: flex;
+        .nav-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            list-style-type: none;
+            background-color: @color-primary;
+            @media @mobile {
+                display: none;
+                width: 100%;
+            }
+        }
+            .text {
+                color: @color-white;
+                text-transform: uppercase;
+                font-weight: bold;
+                text-decoration:none;
+                font-size: 16px;
+                padding: 20px;
+                display: flex;
+                line-height: 1;
+        }
+
+        .button-menu-mobile {
+            @media @m-mobile {
+                display: none;
+            }
+        }
+    }
+
+
+}
